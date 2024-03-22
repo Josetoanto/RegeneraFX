@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5e85d" height="655.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="908.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#088d30" height="60.0" layoutX="2.0" layoutY="1.0" stroke="#088d30" strokeType="INSIDE" width="907.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="291.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuPrincipal/IMG_logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.12" contrast="0.21" hue="-0.56" />
+         </effect>
+      </ImageView>
+      <Label fx:id="usuarioLabel_menu" layoutX="722.0" layoutY="10.0" prefHeight="45.0" prefWidth="135.0" text="NAMEUSUARIO">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="usuarioLabel_menu" layoutX="74.0" layoutY="7.0" prefHeight="45.0" prefWidth="164.0" text="AGREGAR VENTA">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="168.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#onBtnVenta_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="AGREGAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="382.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#onBtnBuscar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="BUSCAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="598.0" layoutY="456.0" mnemonicParsing="false" onMouseClicked="#onBtnEditar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="EDITAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="247.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#onBtnCancelar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="CANCELAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="487.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="MOSTRAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fx:id="iconoReturn_menuVentas" fitHeight="34.0" fitWidth="35.0" layoutX="18.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/iconoregreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="61.0" layoutX="847.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_usuarioSinfondo2.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

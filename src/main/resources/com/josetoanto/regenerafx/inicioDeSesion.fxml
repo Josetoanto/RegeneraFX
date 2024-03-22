@@ -2,15 +2,17 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -18,13 +20,16 @@
          <image>
             <Image url="@IMG/IMG_Login/IMG%20LOGIN.png" />
          </image>
+         <effect>
+            <InnerShadow />
+         </effect>
       </ImageView>
       <Label layoutX="495.0" layoutY="138.0" prefHeight="45.0" prefWidth="359.0" text="Inicia sesion para continuar">
          <font>
             <Font name="MS Outlook" size="30.0" />
          </font>
       </Label>
-      <Text fill="#00bc1c" layoutX="555.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+      <Text fill="#009714" layoutX="555.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
          <font>
             <Font name="MT Extra" size="48.0" />
          </font>
@@ -34,12 +39,12 @@
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="494.0" layoutY="285.0" prefHeight="34.0" prefWidth="333.0">
+      <TextField fx:id="username_login" layoutX="494.0" layoutY="285.0" prefHeight="34.0" prefWidth="333.0">
          <effect>
             <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
          </effect>
          <font>
-            <Font size="20.0" />
+            <Font size="30.0" />
          </font>
       </TextField>
       <Label layoutX="591.0" layoutY="379.0" prefHeight="45.0" prefWidth="161.0" text="CONTRASEÑA">
@@ -47,18 +52,19 @@
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="494.0" layoutY="415.0" prefHeight="34.0" prefWidth="333.0">
-         <effect>
-            <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
-         </effect>
-         <font>
-            <Font size="20.0" />
-         </font>
-      </TextField>
-      <Button layoutX="571.0" layoutY="512.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green; -fx-background-radius: 50;" text="INGRESAR" textFill="WHITE">
+      <Button layoutX="571.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#onBtnIngresar_Login" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="INGRESAR" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
+      <PasswordField fx:id="password_login" layoutX="491.0" layoutY="414.0" prefHeight="34.0" prefWidth="333.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+         </effect>
+      </PasswordField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009714" height="34.0" layoutX="720.0" layoutY="19.0" stroke="#009714" strokeType="INSIDE" width="180.0" />
    </children>
 </AnchorPane>

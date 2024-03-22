@@ -5,15 +5,16 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.cuentas.CreacionDeCuentaController">
+<AnchorPane prefHeight="650.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.cuentas.CreacionDeCuentaController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#088d30" height="60.0" layoutX="-4.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="907.0" />
-      <Label layoutX="378.0" layoutY="5.0" prefHeight="45.0" prefWidth="159.0" text="REGENERA">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009714" height="60.0" layoutX="-4.0" layoutY="-3.0" stroke="#009714" strokeType="INSIDE" width="907.0" />
+      <Label layoutX="378.0" layoutY="5.0" prefHeight="45.0" prefWidth="159.0" text="REGENERA" textFill="WHITE">
          <font>
             <Font name="Franklin Gothic Medium" size="30.0" />
          </font>
@@ -28,39 +29,45 @@
             <Font name="MS Outlook" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="340.0" layoutY="180.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DEL USUARIO">
+      <Label layoutX="340.0" layoutY="190.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DEL USUARIO">
          <font>
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="304.0" layoutY="234.0" prefHeight="34.0" prefWidth="333.0" />
+      <TextField fx:id="createUsername_newCuenta" layoutX="304.0" layoutY="234.0" prefHeight="34.0" prefWidth="333.0" />
       <Label layoutX="340.0" layoutY="280.0" prefHeight="45.0" prefWidth="250.0" text="CORREO ELECTRONICO">
          <font>
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="304.0" layoutY="334.0" prefHeight="34.0" prefWidth="333.0" />
+      <TextField fx:id="newEmail_newCuenta" layoutX="304.0" layoutY="334.0" prefHeight="34.0" prefWidth="333.0" />
       <Label layoutX="395.0" layoutY="374.0" prefHeight="45.0" prefWidth="161.0" text="CONTRASEÑA">
          <font>
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <PasswordField layoutX="299.0" layoutY="428.0" prefHeight="34.0" prefWidth="333.0" />
+      <PasswordField fx:id="newPassword_newCuenta" layoutX="299.0" layoutY="428.0" prefHeight="34.0" prefWidth="333.0" />
       <Label layoutX="339.0" layoutY="470.0" prefHeight="45.0" prefWidth="257.0" text="REPETIR CONTRASEÑA">
          <font>
             <Font name="MS Reference Sans Serif" size="20.0" />
          </font>
       </Label>
-      <PasswordField layoutX="301.0" layoutY="522.0" prefHeight="34.0" prefWidth="333.0" />
-      <Button layoutX="218.0" layoutY="595.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: green; -fx-background-radius: 50;" text="INGRESAR" textFill="WHITE">
+      <PasswordField fx:id="repeatPassword_newCuenta" layoutX="301.0" layoutY="522.0" prefHeight="34.0" prefWidth="333.0" />
+      <Button layoutX="218.0" layoutY="595.0" mnemonicParsing="false" onMouseClicked="#onBtnIngresar_newCuenta" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: green; -fx-background-radius: 5;" text="INGRESAR" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="581.0" layoutY="598.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: green; -fx-background-radius: 50;" text="CANCELAR" textFill="WHITE">
+      <Button layoutX="581.0" layoutY="598.0" mnemonicParsing="false" onMouseClicked="#onBtnCancelar_newCuenta" prefHeight="45.0" prefWidth="188.0" style="-fx-background-color: green; -fx-background-radius: 5;" text="CANCELAR" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009714" height="244.0" layoutY="431.0" stroke="#009714" strokeType="INSIDE" width="36.0" />
+      <ImageView fitHeight="270.0" fitWidth="275.0" layoutX="1.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_Login/IMG_decoracion.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
