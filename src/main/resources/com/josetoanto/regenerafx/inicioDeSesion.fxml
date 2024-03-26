@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
@@ -14,11 +13,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.cuentas.InicioDeSesionController">
    <children>
       <ImageView fitHeight="554.0" fitWidth="397.0" layoutX="58.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@IMG/IMG_Login/IMG%20LOGIN.png" />
+            <Image url="@IMG/IMG_Login/IMG LOGIN.png" />
          </image>
          <effect>
             <InnerShadow />
@@ -40,9 +39,6 @@
          </font>
       </Label>
       <TextField fx:id="username_login" layoutX="494.0" layoutY="285.0" prefHeight="34.0" prefWidth="333.0">
-         <effect>
-            <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
-         </effect>
          <font>
             <Font size="30.0" />
          </font>
@@ -61,9 +57,6 @@
          <font>
             <Font size="20.0" />
          </font>
-         <effect>
-            <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
-         </effect>
       </PasswordField>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009714" height="34.0" layoutX="720.0" layoutY="19.0" stroke="#009714" strokeType="INSIDE" width="180.0" />
    </children>

@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.josetoanto.regenerafx.controllers.proveedores.AgregarProveedorController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.AgregarProveedorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21b20e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Label layoutX="14.0" layoutY="12.0" text="AGREGAR PROVEEDOR" />
+      <ImageView fx:id="iconoSalir" fitHeight="26.0" fitWidth="26.0" layoutX="464.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="64.0" prefHeight="45.0" prefWidth="235.0" text="NOMBRE DEL PROVEEDOR:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameProveedor_agregarProveedor" layoutX="104.0" layoutY="108.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="140.0" layoutY="146.0" prefHeight="45.0" prefWidth="250.0" text="LOTES DISPONIBLES:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lotesDispo_agregarProveedor" layoutX="104.0" layoutY="188.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="135.0" layoutY="226.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DEL PRODUCTO:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="precio_agregaProveedor" layoutX="99.0" layoutY="269.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="135.0" layoutY="307.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE TELEFONO:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroTelefono_agregarProveedor" layoutX="99.0" layoutY="349.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="135.0" layoutY="377.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE PROVEEDOR:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numeroProveedor_agregarProveedor" layoutX="99.0" layoutY="419.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <ImageView fx:id="iconoListo" fitHeight="26.0" fitWidth="26.0" layoutX="450.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoListo.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

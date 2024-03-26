@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#037c099c" height="241.0" layoutX="104.0" layoutY="129.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="300.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21b20e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Label layoutX="14.0" layoutY="12.0" text="MODIFICAR PRODUCTO" />
+      <ImageView fx:id="iconoSalir" fitHeight="26.0" fitWidth="26.0" layoutX="464.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="98.0" layoutY="44.0" prefHeight="45.0" prefWidth="313.0" text="CODIGO DEL PRODUCTO A MODIFICAR:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codigoModificar_buscarventa" layoutX="104.0" layoutY="88.0" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="150.0" layoutY="124.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DEL PRODUCTO:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nuevoNombre_buscarVenta" layoutX="124.0" layoutY="168.0" prefHeight="20.0" prefWidth="250.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="150.0" layoutY="206.0" prefHeight="45.0" prefWidth="250.0" text="CODIGO DEL PRODUCTO:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newCodigoProducto_buscarVenta" layoutX="124.0" layoutY="248.0" prefHeight="20.0" prefWidth="250.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="145.0" layoutY="286.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DEL PRODUCTO:">
+         <font>
+            <Font name="MS Reference Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newPrecioProducto_buscarVentas" layoutX="119.0" layoutY="329.0" prefHeight="20.0" prefWidth="250.0" style="-fx-background-radius: 10;" />
+      <ImageView fx:id="iconoListo" fitHeight="26.0" fitWidth="29.0" layoutX="442.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoListo.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

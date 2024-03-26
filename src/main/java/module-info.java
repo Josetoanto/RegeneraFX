@@ -9,8 +9,6 @@ module com.josetoanto.regenerafx {
     exports com.josetoanto.regenerafx;
     exports com.josetoanto.regenerafx.controllers;
     opens com.josetoanto.regenerafx.controllers to javafx.fxml;
-    exports com.josetoanto.regenerafx.controllers;
-    opens com.josetoanto.regenerafx.controllers to javafx.fxml;
     exports com.josetoanto.regenerafx.controllers.cuentas;
     opens com.josetoanto.regenerafx.controllers.cuentas to javafx.fxml;
 }

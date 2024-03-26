@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.josetoanto.regenerafx.controllers.proveedores.ProveedoresMenuController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.ProveedoresMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#88e88b" height="655.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="908.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#088d30" height="60.0" layoutX="2.0" layoutY="1.0" stroke="#088d30" strokeType="INSIDE" width="907.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuPrincipal/IMG_logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust contrast="0.02" hue="-0.3" />
+         </effect>
+      </ImageView>
+      <Label fx:id="usuarioLabel_menu" layoutX="722.0" layoutY="10.0" prefHeight="45.0" prefWidth="135.0" text="NAMEUSUARIO">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="usuarioLabel_menu" layoutX="74.0" layoutY="7.0" prefHeight="45.0" prefWidth="164.0" text="PROVEDORES">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregar_menuProvedoor" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="AGREGAR PROVEEDOR" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="482.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#onBtnEditar_menuProveedor" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="EDITAR PROVEEDOR" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="227.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnEliminar_menuProvedoor" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="ELIMINAR PROVEEDOR" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="487.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnVer_menuProveedor" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="VER PROVEEDORES" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fx:id="iconoReturn" fitHeight="34.0" fitWidth="35.0" layoutX="18.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoregreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="61.0" layoutX="847.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMG/IMG_MenuVenta/IMG_usuarioSinfondo2.png" />
+         </image>
+      </ImageView>
+   </children>
 </AnchorPane>

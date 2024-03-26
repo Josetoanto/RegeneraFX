@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5e85d" height="655.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="908.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" />
@@ -58,9 +57,9 @@
             <DropShadow />
          </effect>
       </Button>
-      <ImageView fx:id="iconoReturn_menuVentas" fitHeight="34.0" fitWidth="35.0" layoutX="18.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="iconoReturn" fitHeight="34.0" fitWidth="35.0" layoutX="18.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../IMG/IMG_MenuVenta/iconoregreso.png" />
+            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoregreso.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="61.0" layoutX="847.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
