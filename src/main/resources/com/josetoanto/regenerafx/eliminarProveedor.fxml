@@ -9,16 +9,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.EliminarProductoController">
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.EliminarProveedorController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21b20e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
-      <Label layoutX="14.0" layoutY="12.0" text="ELIMINAR PRODUCTO" />
+      <Label layoutX="14.0" layoutY="12.0" text="ELIMINAR PROVEEDOR" />
       <ImageView fx:id="iconoSalir" fitHeight="26.0" fitWidth="26.0" layoutX="464.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
          </image>
       </ImageView>
-      <Label layoutX="98.0" layoutY="94.0" prefHeight="45.0" prefWidth="313.0" text="CODIGO DEL PRODUCTO A ELIMINAR:">
+      <Label layoutX="78.0" layoutY="94.0" prefHeight="45.0" prefWidth="375.0" text="INGRESE NUMERO DE PROVEEDOR A ELIMINAR:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
@@ -45,20 +46,20 @@
       </Text>
       <ImageView fx:id="iconoListo" fitHeight="26.0" fitWidth="29.0" layoutX="452.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoListo.png" />
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
       </ImageView>
-      <Text fx:id="nameP_eliminarProducto" layoutX="48.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME PRODUCTO">
+      <Text fx:id="nameP_eliminarProveedor" layoutX="48.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME PRODUCTO">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Text fx:id="codigo_eliminarProducto" layoutX="188.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CODE">
+      <Text fx:id="codigo_eliminarProveedor" layoutX="188.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CODE">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Text fx:id="precio_eliminarProducto" layoutX="328.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CANTIDAD">
+      <Text fx:id="precio_eliminarProveedor" layoutX="328.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CANTIDAD">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>

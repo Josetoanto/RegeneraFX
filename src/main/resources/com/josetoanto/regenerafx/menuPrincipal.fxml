@@ -10,41 +10,53 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.MenuPrincipalController">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #00be62;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.MenuPrincipalController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#64ff8e" height="655.0" layoutX="-6.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="908.0" AnchorPane.topAnchor="0.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0eae3e" height="60.0" layoutX="-5.0" stroke="#088d30" strokeType="INSIDE" width="907.0" />
-      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="281.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009537" height="46.0" layoutX="-5.0" stroke="#088d30" strokeType="INSIDE" width="907.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@IMG/IMG_MenuPrincipal/IMG_logo.png" />
          </image>
       </ImageView>
-      <Label fx:id="cerrarSesionLabel_menu" layoutX="732.0" layoutY="6.0" prefHeight="45.0" prefWidth="161.0" text="CERRAR SESION">
+      <Label fx:id="usuarioLabel_menu" layoutX="61.0" prefHeight="46.0" prefWidth="370.0">
          <font>
             <Font name="Amble Regular" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="usuarioLabel_menu" layoutX="24.0" layoutY="6.0" prefHeight="45.0" prefWidth="147.0" text="NAMEUSUARIO">
+      <Button layoutX="179.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#onBtnVenta_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="VENTAS">
+         <effect>
+            <DropShadow />
+         </effect>
          <font>
-            <Font name="Amble Regular" size="20.0" />
+            <Font name="Berlin Sans FB" size="12.0" />
          </font>
-      </Label>
-      <Button layoutX="158.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregarVenta_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="AGREGAR VENTA" textFill="WHITE">
+      </Button>
+      <Button layoutX="543.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#onBtnInventario_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="INVENTARIO">
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
-      <Button layoutX="522.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#onBtnInventario_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="INVENTARIO" textFill="WHITE">
+      <Button layoutX="359.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#onBtnProveedores_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="PROVEEDORES">
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
-      <Button layoutX="338.0" layoutY="536.0" mnemonicParsing="false" onMouseClicked="#onBtnProveedores_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="PROVEEDORES" textFill="WHITE">
-         <effect>
-            <DropShadow />
-         </effect>
+      <Button layoutX="770.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onCerrarSesionClick" style="-fx-background-color: null;" text="CERRAR SESION">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
       </Button>
+      <ImageView fitHeight="26.0" fitWidth="47.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_Login/img.png" />
+         </image>
+      </ImageView>
    </children>
    <effect>
       <ColorAdjust contrast="0.21" />

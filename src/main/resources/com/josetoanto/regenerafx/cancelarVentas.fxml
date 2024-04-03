@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="622.0" prefWidth="500.0" style="-fx-background-color: #38dd75;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.CancelarVentasController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="76.0" layoutX="63.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="374.0">
+         <effect>
+            <DisplacementMap scaleX="10.0" scaleY="10.0">
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Label layoutX="14.0" layoutY="12.0" text="CANCELAR VENTAS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="464.0" layoutY="8.0" onMouseClicked="#btmSalir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="75.0" layoutX="70.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoNotificacion.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="129.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EN CASO DE HABER RECIBIDO EL PAGO" />
+      <Text layoutX="129.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEBERAS DEVOLVER EL DINERO DESDE EL MEDIO DE PAGO UTILIZADO" wrappingWidth="284.640625" />
+      <Text layoutX="152.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE LA VENTA A ELIMINAR">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="92.0" layoutX="14.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="35.0" layoutY="213.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="41.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL CLIENTE:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="175.0" layoutY="213.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="179.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="315.0" layoutY="213.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="325.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="64.0" layoutX="427.0" layoutY="218.0" onMouseClicked="#btmEliminarVenta1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoBasura.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="nameCliente_cancelar1" layoutX="41.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numeroCliente_cancelar1" layoutX="181.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="folioCliente_cancelar1" layoutX="322.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="464.0" layoutY="580.0" onMouseClicked="#btmConfirmar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#btmAtras" style="-fx-background-color: #2eb761; -fx-background-radius: 5;" text="Atras" />
+      <Button layoutX="76.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#btmSiguente" style="-fx-background-color: #2eb761; -fx-background-radius: 5;" text="Siguiente" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="92.0" layoutX="12.0" layoutY="321.0" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="33.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="39.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL CLIENTE:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="173.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="177.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="313.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="64.0" layoutX="425.0" layoutY="334.0" onMouseClicked="#btmEliminarVenta2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoBasura.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="nameCliente_cancelar2" layoutX="39.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numeroCliente_cancelar2" layoutX="179.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="folioCliente_cancelar2" layoutX="320.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="92.0" layoutX="12.0" layoutY="434.0" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="33.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="39.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL CLIENTE:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="173.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="177.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="313.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+      <Text fill="WHITE" layoutX="323.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO:">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="68.0" fitWidth="64.0" layoutX="425.0" layoutY="447.0" onMouseClicked="#btmElimianrVenta3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoBasura.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="nameCliente_cancelar3" layoutX="39.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numeroCliente_cancelar3" layoutX="179.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMBER">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="folioCliente_cancelar3" layoutX="320.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOLIO">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

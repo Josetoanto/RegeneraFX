@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #d9ffab;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.InventarioMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25914d" height="67.0" layoutY="-6.0" stroke="#088d30" strokeType="INSIDE" width="910.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuPrincipal/IMG_logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust contrast="0.02" hue="-0.3" />
+         </effect>
+      </ImageView>
+      <Label fx:id="usuarioLabel_menu" layoutX="75.0" layoutY="9.0" prefHeight="45.0" prefWidth="135.0" text="NAMEUSUARIO">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="723.0" layoutY="9.0" prefHeight="45.0" prefWidth="164.0" text="INVENTARIO">
+         <font>
+            <Font name="MS Outlook" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="AGREGAR PRODUCTO" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="482.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#onBtnModificar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MODIFICAR PRODCUTO" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="227.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnEliminar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="ELIMINAR PRODUCTO" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="487.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MOSTRAR PRODUCTOS EN STOCK" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="853.0" layoutY="14.0" onMouseClicked="#onSalirClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoregreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="61.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_usuarioSinfondo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

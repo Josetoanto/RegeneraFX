@@ -15,7 +15,7 @@
       <Label layoutX="14.0" layoutY="12.0" text="VER PROVEEDORES" />
       <ImageView fx:id="iconoSalir_mostrarVenta" fitHeight="26.0" fitWidth="26.0" layoutX="464.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11ba1e" height="92.0" layoutX="7.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" width="484.0" />
@@ -65,7 +65,7 @@
       </Text>
       <ImageView fx:id="iconoListo_mostrarVenta" fitHeight="26.0" fitWidth="29.0" layoutX="452.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../IMG/IMG_MenuVenta/IMG_iconoListo.png" />
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11ba1e" height="92.0" layoutX="7.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" width="484.0" />

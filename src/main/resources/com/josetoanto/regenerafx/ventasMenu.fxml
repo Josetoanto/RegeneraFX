@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #38dd75;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25914d" height="46.0" layoutX="-12.0" stroke="#088d30" strokeType="INSIDE" width="922.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="323.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuPrincipal/IMG_logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.12" contrast="0.21" hue="-0.56" />
+         </effect>
+      </ImageView>
+      <Label fx:id="usuarioLabel_menu" layoutX="62.0" layoutY="4.0" prefHeight="40.0" prefWidth="443.0" textAlignment="RIGHT" textOverrun="CLIP">
+         <font>
+            <Font name="MS Outlook" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" prefHeight="46.0" prefWidth="53.0" text="Ventas">
+         <font>
+            <Font name="MS Outlook" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="168.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregarVenta_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="AGREGAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="382.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onBtnBuscar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="BUSCAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="598.0" layoutY="422.0" mnemonicParsing="false" onMouseClicked="#onBtnEditar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="EDITAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="258.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#onBtnCancelar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="CANCELAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="498.0" layoutY="494.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="MOSTRAR VENTA" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fx:id="iconoReturn" fitHeight="34.0" fitWidth="35.0" layoutX="862.0" layoutY="6.0" onMouseClicked="#onSalirClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_iconoregreso.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="61.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/IMG_MenuVenta/IMG_usuarioSinfondo2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
