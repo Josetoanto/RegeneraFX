@@ -57,4 +57,16 @@ public class Cuenta {
     public void setListaVentas(Venta newVenta) {
         this.listaVentas.add(newVenta);
     }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", gmail='" + gmail + '\'' +
+                ", inventario=" + inventario +
+                ", listaProveedores=" + listaProveedores +
+                ", listaVentas=" + listaVentas +
+                '}';
+    }
 }
