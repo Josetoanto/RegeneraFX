@@ -1,9 +1,18 @@
 package com.josetoanto.regenerafx.models;
 
 public class Producto {
-    String name;
-    float priece;
-    int quantity;
+    protected String name;
+    protected float priece;
+    protected int quantity;
+    protected String codigoProductoID;
+
+    public String getCodigoProductoID() {
+        return codigoProductoID;
+    }
+
+    public void setCodigoProductoID(String codigoProductoID) {
+        this.codigoProductoID = codigoProductoID;
+    }
 
     public int getQuantity() {
         return quantity;

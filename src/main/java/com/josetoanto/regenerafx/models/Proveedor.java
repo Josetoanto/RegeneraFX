@@ -4,63 +4,31 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 public class Proveedor {
-    String name;
-    String num;
-    int proveedorID;
+    private String numProveedor;
+    private String nameProveedor;
+    private String IDProveedor;
 
-
-
-    public String getName() {
-        return name;
+    public String getNumProveedor() {
+        return numProveedor;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNumProveedor(String numProveedor) {
+        this.numProveedor = numProveedor;
     }
 
-    public ArrayList<Lote> getListaLotes() {
-        return listaLotes;
+    public String getNameProveedor() {
+        return nameProveedor;
     }
 
-    public void setLote(Lote newLote) {
-        listaLotes.add(newLote);
+    public void setNameProveedor(String nameProveedor) {
+        this.nameProveedor = nameProveedor;
     }
 
-    public String getNum() {
-        return num;
+    public String getIDProveedor() {
+        return IDProveedor;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setIDProveedor(String IDProveedor) {
+        this.IDProveedor = IDProveedor;
     }
-
-    public int getProveedorID() {
-        return proveedorID;
-    }
-
-    public void setProveedorID(int proveedorID) {
-        this.proveedorID = proveedorID;
-    }
-        public Stack<Producto> comprarLote(int loteID){
-        int indexAux = 0;
-        int indexBuy = 0;
-        for (Lote lote: listaLotes){
-                if (lote.getLoteID()==loteID){
-                    indexBuy = indexAux;
-                }
-                indexAux++;
-            }
-        return listaLotes.get(indexBuy).getListaProductos();
-        }
-        public void eliminarLotecomprarLote(int loteID){
-            int indexAux = 0;
-            int indexEli = 0;
-            for (Lote lote: listaLotes){
-                if (lote.getLoteID()==loteID){
-                    indexEli = indexAux;
-                }
-                indexAux++;
-            }
-            listaLotes.remove(indexEli);
-        }
-    }
+}
