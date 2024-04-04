@@ -30,6 +30,7 @@ public class InicioDeSesionController {
 
     @FXML
     void onBtnIngresar_Login(MouseEvent event) throws IOException {
+        int cuentasIndice = 0;
         for (Cuenta cuenta:listaCuentas){
             if (cuenta.getGmail().equals(correoField.getText()) && cuenta.getPassword().equals(password_login.getText())){
                 FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuPrincipal.fxml"));
@@ -38,12 +39,13 @@ public class InicioDeSesionController {
                 stage.setScene(scene);
                 stage.show();
                 MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
-                menuPrincipalController.setUsuario(cuenta);
                 menuPrincipalController.setStage(stage);
                 menuPrincipalController.setListaCuentas(listaCuentas);
+                menuPrincipalController.setUsuarioIndice(cuentasIndice);
             } else {
                 label_Advertencia.setText("Mail o Contraseña incorrecta");
             }
+            cuentasIndice++;
         }
     }
 

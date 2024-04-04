@@ -2,6 +2,9 @@ package com.josetoanto.regenerafx.controllers;
 
 import com.josetoanto.regenerafx.Main;
 import com.josetoanto.regenerafx.controllers.cuentas.InicioDeSesionController;
+import com.josetoanto.regenerafx.controllers.inventario.InventarioMenuController;
+import com.josetoanto.regenerafx.controllers.proveedores.ProveedoresMenuController;
+import com.josetoanto.regenerafx.controllers.ventas.VentasMenuController;
 import com.josetoanto.regenerafx.models.Cuenta;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,11 +20,12 @@ public class MenuPrincipalController {
 
     @FXML
     private Label usuarioLabel_menu;
-    private Cuenta usuario;
+    private int usuarioIndice;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
-    public void setUsuario(Cuenta cuenta) {
-        this.usuario = cuenta;
+    public void setUsuarioIndice(int cuenta) {
+        this.usuarioIndice = cuenta;
+        usuarioLabel_menu.setText(listaCuentas.get(usuarioIndice).getName());
     }
 
     public void setStage(Stage stage) {
@@ -33,27 +37,46 @@ public class MenuPrincipalController {
     }
 
     @FXML
-    void onBtnInventario_menu(MouseEvent event) {
-
+    void onBtnInventario_menu(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inventarioMenu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Regenera");
+        stage.setScene(scene);
+        stage.show();
+        InventarioMenuController inventarioMenuController = fxmlLoader.getController();
+        inventarioMenuController.setListaCuentas(listaCuentas);
+        inventarioMenuController.setUsuario(usuarioIndice);
+        inventarioMenuController.setStage(stage);
     }
 
     @FXML
-    void onBtnProveedores_menu(MouseEvent event) {
-
+    void onBtnProveedores_menu(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("proveedoresMenu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Regenera");
+        stage.setScene(scene);
+        stage.show();
+        ProveedoresMenuController proveedoresMenuController = fxmlLoader.getController();
+        proveedoresMenuController.setStage(stage);
+        proveedoresMenuController.setListaCuentas(listaCuentas);
+        proveedoresMenuController.setUsuario(usuarioIndice);
     }
 
     @FXML
-    void onBtnVenta_menu(MouseEvent event) {
-
+    void onBtnVenta_menu(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("ventasMenu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Regenera");
+        stage.setScene(scene);
+        stage.show();
+        VentasMenuController ventasMenuController = fxmlLoader.getController();
+        ventasMenuController.setStage(stage);
+        ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuarioIndice);
     }
 
     @FXML
     void onCerrarSesionClick(MouseEvent event) throws IOException {
-        for (Cuenta cuenta:listaCuentas){
-            if (cuenta.getPassword().equals(usuario.getPassword())&&cuenta.getGmail().equals(usuario.getGmail())){
-                cuenta = usuario;
-            }
-        }
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inicioDeSesion.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Regenera");
@@ -63,6 +86,5 @@ public class MenuPrincipalController {
         inicioDeSesionController.setStage(stage);
         inicioDeSesionController.setListaCuentas(listaCuentas);
     }
-
 
 }
