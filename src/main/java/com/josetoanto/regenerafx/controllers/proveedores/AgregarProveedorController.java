@@ -7,9 +7,6 @@ import javafx.scene.input.MouseEvent;
 public class AgregarProveedorController {
 
     @FXML
-    private TextField lotesDispo_agregarProveedor;
-
-    @FXML
     private TextField nameProveedor_agregarProveedor;
 
     @FXML
@@ -17,9 +14,6 @@ public class AgregarProveedorController {
 
     @FXML
     private TextField numeroTelefono_agregarProveedor;
-
-    @FXML
-    private TextField precio_agregaProveedor;
 
     @FXML
     void onConfirmarClick(MouseEvent event) {

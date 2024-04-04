@@ -43,30 +43,6 @@ public class verProveedoresController {
     private Text numero_verProveedores3;
 
     @FXML
-    private Text precio_verProveedores;
-
-    @FXML
-    private Text precio_verProveedores1;
-
-    @FXML
-    private Text precio_verProveedores2;
-
-    @FXML
-    private Text precio_verProveedores3;
-
-    @FXML
-    private Text tipoProducto_verProveedores;
-
-    @FXML
-    private Text tipoProducto_verProveedores1;
-
-    @FXML
-    private Text tipoProducto_verProveedores2;
-
-    @FXML
-    private Text tipoProducto_verProveedores3;
-
-    @FXML
     void btmAtras(MouseEvent event) {
 
     }

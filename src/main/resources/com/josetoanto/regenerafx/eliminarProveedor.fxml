@@ -21,12 +21,12 @@
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
          </image>
       </ImageView>
-      <Label layoutX="75.0" layoutY="68.0" prefHeight="45.0" prefWidth="375.0" text="INGRESE NUMERO DE PROVEEDOR A ELIMINAR:">
+      <Label layoutX="75.0" layoutY="68.0" prefHeight="45.0" prefWidth="375.0" text="INGRESE ID DE PROVEEDOR A ELIMINAR:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="codigoEliminar_eliminarProducto" layoutX="75.0" layoutY="101.0" onKeyPressed="#buscadorProveedor" prefHeight="26.0" prefWidth="375.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="codigoEliminar_eliminarProducto" layoutX="75.0" layoutY="101.0" onKeyPressed="#buscadorProveedor" prefHeight="26.0" prefWidth="323.0" style="-fx-background-radius: 5;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="92.0" layoutX="75.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="323.0" />
       <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="95.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
       <Text fill="WHITE" layoutX="101.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="108.2763671875">

@@ -15,13 +15,7 @@ public class EditarProveedorController {
     private Label lbl_Advertencia;
 
     @FXML
-    private TextField newLoteDispo_editarProveedor;
-
-    @FXML
     private TextField newNumeroTelefono_editarProveedor;
-
-    @FXML
-    private TextField newPrecio_editarProveedor;
 
     @FXML
     private TextField newProveedor_editarProveedor;

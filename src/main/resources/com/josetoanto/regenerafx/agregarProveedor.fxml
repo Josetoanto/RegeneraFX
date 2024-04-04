@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="451.0" prefWidth="483.0" style="-fx-background-color: #82dd84;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.AgregarProveedorController">
+<AnchorPane prefHeight="320.0" prefWidth="488.0" style="-fx-background-color: #82dd84;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.AgregarProveedorController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="488.0" />
       <Label layoutX="14.0" layoutY="12.0" text="AGREGAR PROVEEDOR">
@@ -26,31 +26,19 @@
          </font>
       </Label>
       <TextField fx:id="nameProveedor_agregarProveedor" layoutX="104.0" layoutY="108.0" prefHeight="26.0" prefWidth="308.0" />
-      <Label layoutX="104.0" layoutY="142.0" prefHeight="45.0" prefWidth="250.0" text="LOTES DISPONIBLES:">
+      <Label layoutX="110.0" layoutY="144.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE TELEFONO:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="lotesDispo_agregarProveedor" layoutX="103.0" layoutY="175.0" prefHeight="26.0" prefWidth="308.0" />
-      <Label layoutX="104.0" layoutY="204.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DEL PRODUCTO:">
+      <TextField fx:id="numeroTelefono_agregarProveedor" layoutX="105.0" layoutY="177.0" prefHeight="26.0" prefWidth="308.0" />
+      <Label layoutX="104.0" layoutY="212.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE PROVEEDOR:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="precio_agregaProveedor" layoutX="100.0" layoutY="237.0" prefHeight="26.0" prefWidth="308.0" />
-      <Label layoutX="105.0" layoutY="263.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE TELEFONO:">
-         <font>
-            <Font name="MS Reference Sans Serif" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="numeroTelefono_agregarProveedor" layoutX="100.0" layoutY="296.0" prefHeight="26.0" prefWidth="308.0" />
-      <Label layoutX="99.0" layoutY="331.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE PROVEEDOR:">
-         <font>
-            <Font name="MS Reference Sans Serif" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="numeroProveedor_agregarProveedor" layoutX="100.0" layoutY="364.0" prefHeight="26.0" prefWidth="308.0" />
-      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="451.0" layoutY="411.0" onMouseClicked="#onConfirmarClick" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="numeroProveedor_agregarProveedor" layoutX="105.0" layoutY="245.0" prefHeight="26.0" prefWidth="308.0" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="451.0" layoutY="282.0" onMouseClicked="#onConfirmarClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>

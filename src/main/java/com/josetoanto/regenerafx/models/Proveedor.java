@@ -5,9 +5,10 @@ import java.util.Stack;
 
 public class Proveedor {
     String name;
-    ArrayList<Lote> listaLotes  = new ArrayList<>();
     String num;
     int proveedorID;
+
+
 
     public String getName() {
         return name;
