@@ -25,10 +25,10 @@ public class BuscarVentasController {
 
     @FXML
     private Text total_buscarV1;
-    private Cuenta usuario;
+    private int usuario;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
-    public void setUsuario(Cuenta cuenta) {
+    public void setUsuario(int cuenta) {
         this.usuario = cuenta;
     }
 

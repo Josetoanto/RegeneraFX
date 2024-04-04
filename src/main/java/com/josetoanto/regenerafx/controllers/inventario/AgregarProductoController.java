@@ -77,14 +77,15 @@ public class AgregarProductoController {
                 colageno.setQuantity(Integer.parseInt(cantidadProducto_agregarProducto1.getText()));
                 listaCuentas.get(usuario).getInventario().agregarProducto(colageno);
             }
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuPrincipal.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inventarioMenu.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setTitle("Regenera");
             stage.setScene(scene);
             stage.show();
-            MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
-            menuPrincipalController.setStage(stage);
-            menuPrincipalController.setListaCuentas(listaCuentas);
+            InventarioMenuController inventarioMenuController = fxmlLoader.getController();
+            inventarioMenuController.setStage(stage);
+            inventarioMenuController.setListaCuentas(listaCuentas);
+            inventarioMenuController.setUsuario(usuario);
         }
     }
 

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="667.0" prefWidth="500.0" style="-fx-background-color: #60aa64;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController">
+<AnchorPane prefHeight="555.0" prefWidth="500.0" style="-fx-background-color: #60aa64;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a499c" height="481.0" layoutX="68.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="365.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a499c" height="363.0" layoutX="68.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="365.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a49" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
       <Label layoutX="14.0" layoutY="12.0" text="MODIFICAR PRODUCTO">
          <font>
@@ -27,42 +24,36 @@
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="codigoModificar_buscarventa" layoutX="105.0" layoutY="100.0" onKeyReleased="#buscadorDeProducto" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 5;" />
-      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="464.0" layoutY="623.0" onMouseClicked="#onConfirmarClick" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="codigoModificar_buscarProducto" layoutX="105.0" layoutY="100.0" onKeyReleased="#buscadorDeProducto" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 5;" />
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="464.0" layoutY="505.0" onMouseClicked="#onConfirmarClick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
       </ImageView>
-      <Label layoutX="105.0" layoutY="171.0" prefHeight="45.0" prefWidth="250.0" text="TIPO DEL PRODUCTO:">
+      <Label layoutX="105.0" layoutY="162.0" prefHeight="45.0" prefWidth="250.0" text="CANTIDAD DE PRODUCTO:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <ComboBox fx:id="tipoDeProducto" layoutX="105.0" layoutY="210.0" onMouseClicked="#onTipoDeProductoClick" prefHeight="34.0" prefWidth="300.0" style="-fx-background-color: white;" />
-      <Label layoutX="105.0" layoutY="256.0" prefHeight="45.0" prefWidth="250.0" text="CANTIDAD DE PRODUCTO:">
+      <TextField fx:id="cantidadProducto" layoutX="105.0" layoutY="195.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
+      <Label layoutX="105.0" layoutY="243.0" prefHeight="45.0" prefWidth="250.0" text="CODIGO DE PRODUCTO:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="cantidadProducto" layoutX="105.0" layoutY="289.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="337.0" prefHeight="45.0" prefWidth="250.0" text="CODIGO DE PRODUCTO:">
+      <TextField fx:id="codigoProducto" layoutX="105.0" layoutY="276.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
+      <Label layoutX="105.0" layoutY="318.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DE PRODUCTO:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="codigoProducto" layoutX="105.0" layoutY="370.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="412.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DE PRODUCTO:">
+      <TextField fx:id="nombreProducto" layoutX="105.0" layoutY="351.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
+      <Label layoutX="105.0" layoutY="400.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DE PRODUCTO:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="nombreProducto" layoutX="105.0" layoutY="445.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="494.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DE PRODUCTO:">
-         <font>
-            <Font name="MS Reference Sans Serif" size="15.0" />
-         </font>
-      </Label>
-      <TextField fx:id="precioProducto" layoutX="105.0" layoutY="527.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label fx:id="lblAdvertencia" layoutX="100.0" layoutY="162.0" prefHeight="18.0" prefWidth="300.0" />
+      <TextField fx:id="precioProducto" layoutX="105.0" layoutY="433.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
+      <Label fx:id="lblAdvertencia" layoutX="100.0" layoutY="153.0" prefHeight="18.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

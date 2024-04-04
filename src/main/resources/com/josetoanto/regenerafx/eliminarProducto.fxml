@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="314.0" prefWidth="484.0" style="-fx-background-color: #60aa64;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.EliminarProductoController">
+<AnchorPane prefHeight="314.0" prefWidth="484.0" style="-fx-background-color: #60aa64;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.EliminarProductoController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a49" height="41.0" stroke="BLACK" strokeType="INSIDE" width="485.0" />
       <Label layoutX="14.0" layoutY="12.0" text="ELIMINAR PRODUCTO">
@@ -26,7 +23,7 @@
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="codigoEliminar_eliminarProducto" layoutX="93.0" layoutY="96.0" onMouseReleased="#buscadorProductos" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="codigoEliminar_eliminarProducto" layoutX="93.0" layoutY="96.0" onKeyReleased="#buscadorProductos" prefHeight="20.0" prefWidth="300.0" style="-fx-background-radius: 5;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a49" height="92.0" layoutX="15.0" layoutY="164.0" stroke="BLACK" strokeType="INSIDE" width="455.0" />
       <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="40.0" layoutY="172.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
       <Text fill="WHITE" layoutX="46.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PRODUCTO" wrappingWidth="108.2763671875">

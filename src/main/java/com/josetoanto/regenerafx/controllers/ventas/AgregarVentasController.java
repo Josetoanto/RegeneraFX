@@ -35,10 +35,10 @@ public class AgregarVentasController {
 
     @FXML
     private TextField total_agregarVenta;
-    private Cuenta usuario;
+    private int usuario;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
-    public void setUsuario(Cuenta cuenta) {
+    public void setUsuario(int cuenta) {
         this.usuario = cuenta;
     }
 

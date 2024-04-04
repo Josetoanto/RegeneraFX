@@ -22,6 +22,7 @@ public class InventarioMenuController {
     private ArrayList<Cuenta> listaCuentas;
     public void setUsuario(int cuenta) {
         this.usuario = cuenta;
+        usuarioLabel_menu.setText(listaCuentas.get(usuario).getName());
     }
 
     public void setStage(Stage stage) {
@@ -83,6 +84,7 @@ public class InventarioMenuController {
         mostrarProductosController.setListaCuentas(listaCuentas);
         mostrarProductosController.setUsuario(usuario);
         mostrarProductosController.setStage(stage);
+        mostrarProductosController.mostrarProductos();
     }
 
     @FXML

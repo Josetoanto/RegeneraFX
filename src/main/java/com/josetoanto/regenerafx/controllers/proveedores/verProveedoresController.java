@@ -46,10 +46,10 @@ public class verProveedoresController {
     @FXML
     private Text numero_verProveedores3;
 
-    private Cuenta usuario;
+    private int usuario;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
-    public void setUsuario(Cuenta cuenta) {
+    public void setUsuario(int cuenta) {
         this.usuario = cuenta;
     }
 
