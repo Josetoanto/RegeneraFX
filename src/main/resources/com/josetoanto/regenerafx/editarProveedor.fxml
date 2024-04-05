@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="369.0" prefWidth="394.0" style="-fx-background-color: #7cd37e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.EditarProveedorController">
+<AnchorPane prefHeight="369.0" prefWidth="394.0" style="-fx-background-color: #7cd37e;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.EditarProveedorController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="394.0" />
       <Label layoutX="14.0" layoutY="12.0" text="EDITAR PROVEEDOR">
@@ -25,7 +23,7 @@
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="folioEditar_editarVenta" layoutX="71.0" layoutY="101.0" onKeyReleased="#buscadorProveedor" prefHeight="26.0" prefWidth="250.0" style="-fx-background-radius: 5;" />
+      <TextField fx:id="idEditar" layoutX="71.0" layoutY="101.0" onKeyReleased="#buscadorProveedor" prefHeight="26.0" prefWidth="250.0" style="-fx-background-radius: 5;" />
       <Label layoutX="71.0" layoutY="136.0" prefHeight="45.0" prefWidth="235.0" text="NOMBRE DEL PROVEEDOR:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
@@ -38,7 +36,7 @@
          </font>
       </Label>
       <TextField fx:id="newNumeroTelefono_editarProveedor" layoutX="71.0" layoutY="228.0" prefHeight="20.0" prefWidth="250.0" style="-fx-background-radius: 5;" />
-      <Label layoutX="71.0" layoutY="254.0" prefHeight="45.0" prefWidth="262.0" text="NUMERO DE PROVEEDOR:">
+      <Label layoutX="71.0" layoutY="254.0" prefHeight="45.0" prefWidth="262.0" text="ID DE PROVEEDOR:">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>

@@ -1,19 +1,24 @@
 package com.josetoanto.regenerafx.controllers.proveedores;
 
+import com.josetoanto.regenerafx.Main;
 import com.josetoanto.regenerafx.models.Cuenta;
+import com.josetoanto.regenerafx.models.Proveedor;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class EditarProveedorController {
 
     @FXML
-    private TextField folioEditar_editarVenta;
+    private TextField idEditar;
 
     @FXML
     private Label lbl_Advertencia;
@@ -43,17 +48,44 @@ public class EditarProveedorController {
 
     @FXML
     void buscadorProveedor(KeyEvent event) {
-
+        for (Proveedor proveedor: listaCuentas.get(usuario).getListaProveedores()){
+            if (proveedor.getIDProveedor().equals(idEditar.getText())){
+                lbl_Advertencia.setText("Proveedor encontrado");
+                newNumeroTelefono_editarProveedor.setText(proveedor.getNumProveedor());
+                newProveedor_editarProveedor.setText(proveedor.getNameProveedor());
+                numeroProveedor_editarProveedor.setText(proveedor.getIDProveedor());
+            } else {
+                lbl_Advertencia.setText("Proveedor no encontrado");
+                newNumeroTelefono_editarProveedor.setText("");
+                newProveedor_editarProveedor.setText("");
+                numeroProveedor_editarProveedor.setText("");
+            }
+        }
     }
 
     @FXML
     void onConfirmarClick(MouseEvent event) {
-
+        for (Proveedor proveedor: listaCuentas.get(usuario).getListaProveedores()) {
+            if (proveedor.getIDProveedor().equals(idEditar.getText())) {
+                proveedor.setNameProveedor(newProveedor_editarProveedor.getText());
+                proveedor.setNumProveedor(numeroProveedor_editarProveedor.getText());
+                proveedor.setIDProveedor(numeroProveedor_editarProveedor.getText());
+                lbl_Advertencia.setText("Proveedor editado con exito");
+            }
+        }
     }
 
     @FXML
-    void onSalirClick(MouseEvent event) {
-
+    void onSalirClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("proveedoresMenu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Regenera");
+        stage.setScene(scene);
+        stage.show();
+        ProveedoresMenuController proveedoresMenuController = fxmlLoader.getController();
+        proveedoresMenuController.setListaCuentas(listaCuentas);
+        proveedoresMenuController.setUsuario(usuario);
+        proveedoresMenuController.setStage(stage);
     }
 
 }
