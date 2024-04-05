@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="526.0" prefWidth="388.0" style="-fx-background-color: #7cd37e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.VerProveedoresController">
+<AnchorPane prefHeight="526.0" prefWidth="388.0" style="-fx-background-color: #29672D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.proveedores.VerProveedoresController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="41.0" stroke="BLACK" strokeType="INSIDE" width="388.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#64b783" height="41.0" stroke="BLACK" strokeType="INSIDE" width="388.0" />
       <Label layoutX="14.0" layoutY="12.0" text="VER PROVEEDORES">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="12.0" />
@@ -21,9 +21,9 @@
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="92.0" layoutX="7.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="12.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="18.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#78917b" height="92.0" layoutX="7.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="12.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="18.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -33,8 +33,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="132.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="142.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="132.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="142.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -49,9 +49,9 @@
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="92.0" layoutX="7.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="12.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="18.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#78917b" height="92.0" layoutX="7.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="12.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="18.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -61,8 +61,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="132.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="142.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="132.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="142.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -72,9 +72,9 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#08862e" height="92.0" layoutX="7.0" layoutY="335.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="12.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="18.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#78917b" height="92.0" layoutX="7.0" layoutY="335.0" stroke="BLACK" strokeType="INSIDE" width="369.0" />
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="12.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="18.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL PROVEEDOR" wrappingWidth="114.94140625">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -84,8 +84,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="132.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="142.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="132.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="142.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE TELEFONO:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -95,12 +95,12 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Label layoutX="38.0" layoutY="85.0" text="LISTA DE PROVEEDORES EXISTENTES">
+      <Label layoutX="38.0" layoutY="85.0" text="LISTA DE PROVEEDORES EXISTENTES" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="18.0" />
          </font></Label>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="257.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="264.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="257.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="264.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -110,8 +110,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="257.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="264.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="257.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="264.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -121,8 +121,8 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="257.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
-      <Text fill="WHITE" layoutX="264.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
+      <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#cac6be" height="76.0" layoutX="257.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
+      <Text layoutX="264.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID DE PROVEEDOR:" wrappingWidth="98.2177734375">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
@@ -132,7 +132,7 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Text>
-      <Button layoutX="11.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#btmAtras" style="-fx-background-color: #238a49; -fx-background-radius: 5;" text="Atras" />
-      <Button layoutX="73.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#btmSiguente" style="-fx-background-color: #238a49; -fx-background-radius: 5;" text="Siguiente" />
+      <Button layoutX="11.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#btmAtras" style="-fx-background-color: #FF3131; -fx-background-radius: 5;" text="Atras" textFill="WHITE" />
+      <Button layoutX="73.0" layoutY="480.0" mnemonicParsing="false" onMouseClicked="#btmSiguente" style="-fx-background-color: #2eb761; -fx-background-radius: 5;" text="Siguiente" textFill="WHITE" />
    </children>
 </AnchorPane>
