@@ -46,4 +46,8 @@ public class Producto {
                 " }";
     }
 
+    public void restarProducto (int quantityRestar){
+        quantity = quantity - quantityRestar;
+    }
+
 }

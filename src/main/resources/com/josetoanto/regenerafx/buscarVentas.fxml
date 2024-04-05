@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #38dd75;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.BuscarVentasController">
+<AnchorPane prefHeight="338.0" prefWidth="500.0" style="-fx-background-color: #38dd75;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.BuscarVentasController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#218446" height="92.0" layoutX="12.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="476.0" />
       <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="314.0" layoutY="217.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
@@ -28,7 +25,7 @@
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="folio_buscarVenta" layoutX="100.0" layoutY="119.0" prefHeight="41.0" prefWidth="300.0" style="-fx-background-radius: 5; -fx-background-color: #ececec;" />
+      <TextField fx:id="folio_buscarVenta" layoutX="100.0" layoutY="119.0" prefHeight="26.0" prefWidth="300.0" style="-fx-background-radius: 5; -fx-background-color: #ececec;" />
       <Rectangle accessibleRole="TEXT" arcHeight="5.0" arcWidth="5.0" fill="#6c8297" height="76.0" layoutX="37.0" layoutY="217.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
       <Text fill="WHITE" layoutX="43.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL CLIENTE:">
          <font>
@@ -46,7 +43,7 @@
             <Font name="System Bold" size="9.0" />
          </font>
       </Text>
-      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="462.0" layoutY="357.0" onMouseClicked="#buscarBoton" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="415.0" layoutY="119.0" onMouseClicked="#buscarBoton" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
@@ -71,7 +68,7 @@
             <Font name="System Bold" size="9.0" />
          </font>
       </Text>
-      <Text fx:id="total_buscarV1" layoutX="453.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$$">
+      <Text fx:id="total_buscarV1" layoutX="444.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$$">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>

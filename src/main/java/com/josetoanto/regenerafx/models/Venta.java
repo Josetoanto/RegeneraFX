@@ -6,7 +6,7 @@ public class Venta {
     private String clientNum;
     private int cantidadDeProducto;
     private String codigoProductoID;
-    private int total;
+    private float total;
 
     public String getFolio() {
         return folio;
@@ -48,11 +48,11 @@ public class Venta {
         this.codigoProductoID = codigoProductoID;
     }
 
-    public int getTotal() {
+    public float getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(float total) {
         this.total = total;
     }
 

@@ -97,13 +97,13 @@ public class MostrarProductosController {
         inventarioMenuController.setUsuario(usuario);
     }
 
-    void mostrarProductos(){
+    public void mostrarProductos(){
         int tamañoInventario = listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().size();
 
         if (aux < tamañoInventario) {
             nameP_mostrarProducto1.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux).getName() +
             "("+listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux).getClass().getSimpleName() +")");
-            precio_mostrarProductos1.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux).getPriece()));
+            precio_mostrarProductos1.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux).getQuantity()));
             codigo_mostrarProducto1.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux).getCodigoProductoID());
         } else {
             nameP_mostrarProducto1.setText("");
@@ -112,7 +112,7 @@ public class MostrarProductosController {
         }
 
         if (aux1 < tamañoInventario) {
-            precio_mostrarProductos2.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux1).getPriece()));
+            precio_mostrarProductos2.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux1).getQuantity()));
             nameP_mostrarProducto2.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux1).getName() +
                     "("+listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux1).getClass().getSimpleName() +")");
             codigo_mostrarProducto2.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux1).getCodigoProductoID());
@@ -123,7 +123,7 @@ public class MostrarProductosController {
         }
 
         if (aux2 < tamañoInventario) {
-            precio_mostrarProductos3.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux2).getPriece()));
+            precio_mostrarProductos3.setText(String.valueOf(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux2).getQuantity()));
             nameP_mostrarProducto3.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux2).getName() +
                     "("+listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux2).getClass().getSimpleName() +")");
             codigo_mostrarProducto3.setText(listaCuentas.get(usuario).getInventario().mostrarProductoEnStock().get(aux2).getCodigoProductoID());

@@ -18,33 +18,4 @@ public class Inventario {
         productList.add(nuevoProducto);
     }
 
-    public void eliminarProducto(String codigoProductoIDEliminar){
-        int auxEliminar = -1;
-        int aux = 0;
-        for (Producto producto:productList){
-            if (producto.getCodigoProductoID().equals(codigoProductoIDEliminar)){
-                auxEliminar = aux;
-            }
-            aux++;
-        }
-        if (auxEliminar > -1){
-            productList.remove(auxEliminar);
-        }
-    }
-    public boolean editarProducto(String codigoProductoEditar,Producto productoEditado){
-        int auxEditar = -1;
-        int aux = 0;
-        for (Producto producto:productList){
-            if (producto.getCodigoProductoID().equals(codigoProductoEditar)){
-                auxEditar = aux;
-            }
-            aux++;
-        }
-        if (auxEditar > -1){
-            productList.set(auxEditar,productoEditado);
-            return true;
-        } else {
-            return false;
-        }
-    }
 }

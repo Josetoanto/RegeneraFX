@@ -2,7 +2,6 @@ package com.josetoanto.regenerafx.controllers.proveedores;
 
 import com.josetoanto.regenerafx.Main;
 import com.josetoanto.regenerafx.controllers.MenuPrincipalController;
-import com.josetoanto.regenerafx.controllers.inventario.EliminarProductoController;
 import com.josetoanto.regenerafx.models.Cuenta;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,6 +22,7 @@ public class ProveedoresMenuController {
     private ArrayList<Cuenta> listaCuentas;
     public void setUsuario(int cuenta) {
         this.usuario = cuenta;
+        usuarioLabel_menu.setText(listaCuentas.get(usuario).getName());
     }
 
     public void setStage(Stage stage) {

@@ -2,6 +2,7 @@ package com.josetoanto.regenerafx.controllers.ventas;
 
 import com.josetoanto.regenerafx.Main;
 import com.josetoanto.regenerafx.models.Cuenta;
+import com.josetoanto.regenerafx.models.Venta;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -45,7 +46,19 @@ public class BuscarVentasController {
     }
     @FXML
     void buscarBoton(MouseEvent event) {
-
+        for (Venta venta: listaCuentas.get(usuario).getListaVentas()){
+            if (venta.getFolio().equals(folio_buscarVenta.getText())){
+                nameCliente_BuscarVenta.setText(venta.getClienteName());
+                cantidadCliente_buscarVenta.setText(String.valueOf(venta.getCantidadDeProducto()));
+                numeroCliente_BuscarVenta.setText(venta.getClientNum());
+                total_buscarV1.setText(String.valueOf(venta.getTotal()));
+            } else {
+                nameCliente_BuscarVenta.setText("");
+                cantidadCliente_buscarVenta.setText("");
+                numeroCliente_BuscarVenta.setText("");
+                total_buscarV1.setText("");
+            }
+        }
     }
 
     @FXML

@@ -24,8 +24,10 @@ public class VentasMenuController {
     private int usuario;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
+
     public void setUsuario(int cuenta) {
         this.usuario = cuenta;
+        usuarioLabel_menu.setText(listaCuentas.get(usuario).getName());
     }
 
     public void setStage(Stage stage) {
@@ -45,6 +47,7 @@ public class VentasMenuController {
         AgregarVentasController agregarVentasController = fxmlLoader.getController();
         agregarVentasController.setStage(stage);
         agregarVentasController.setListaCuentas(listaCuentas);
+        agregarVentasController.actualizarProductos();
     }
 
     @FXML
@@ -69,18 +72,7 @@ public class VentasMenuController {
         CancelarVentasController cancelarVentasController = fxmlLoader.getController();
         cancelarVentasController.setStage(stage);
         cancelarVentasController.setListaCuentas(listaCuentas);
-    }
-
-    @FXML
-    void onBtnEditar_menuVenta(MouseEvent event)throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("editarVentas.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Regenera");
-        stage.setScene(scene);
-        stage.show();
-        EditarVentasController editarVentasController = fxmlLoader.getController();
-        editarVentasController.setStage(stage);
-        editarVentasController.setListaCuentas(listaCuentas);
+        cancelarVentasController.mostrarVentas();
     }
 
     @FXML
@@ -93,6 +85,7 @@ public class VentasMenuController {
         MostrarVentasController mostrarVentasController = fxmlLoader.getController();
         mostrarVentasController.setStage(stage);
         mostrarVentasController.setListaCuentas(listaCuentas);
+        mostrarVentasController.mostrarVentas();
     }
 
     @FXML
