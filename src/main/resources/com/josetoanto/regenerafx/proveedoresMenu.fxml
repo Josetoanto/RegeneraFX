@@ -18,7 +18,7 @@
             <ColorAdjust contrast="0.02" hue="-0.3" />
          </effect>
       </ImageView>
-      <Label fx:id="usuarioLabel_menu" layoutX="53.0" layoutY="6.0" prefHeight="45.0" prefWidth="135.0">
+      <Label fx:id="usuarioLabel_menu" layoutX="53.0" layoutY="6.0" prefHeight="46.0" prefWidth="533.0">
          <font>
             <Font name="MS Outlook" size="20.0" />
          </font>
