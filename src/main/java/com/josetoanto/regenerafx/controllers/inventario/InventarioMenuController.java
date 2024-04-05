@@ -97,6 +97,7 @@ public class InventarioMenuController {
         MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
         menuPrincipalController.setStage(stage);
         menuPrincipalController.setListaCuentas(listaCuentas);
+        menuPrincipalController.setUsuario(usuario);
     }
 
 }

@@ -71,6 +71,7 @@ public class BuscarVentasController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuario);
     }
 
 }

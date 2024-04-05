@@ -79,6 +79,7 @@ public class CancelarVentasController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuario);
     }
 
     @FXML
@@ -86,7 +87,7 @@ public class CancelarVentasController {
         listaCuentas.get(usuario).getListaVentas().remove(aux2);
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Borrada");
-        alert.setHeaderText("Venta borrada por exito");
+        alert.setHeaderText("Venta borrada con exito");
         alert.showAndWait();
         mostrarVentas();
     }
@@ -96,7 +97,7 @@ public class CancelarVentasController {
         listaCuentas.get(usuario).getListaVentas().remove(aux);
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Borrada");
-        alert.setHeaderText("Venta borrada por exito");
+        alert.setHeaderText("Venta borrada con exito");
         alert.showAndWait();
         mostrarVentas();
     }
@@ -106,7 +107,7 @@ public class CancelarVentasController {
         listaCuentas.get(usuario).getListaVentas().remove(aux1);
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Borrada");
-        alert.setHeaderText("Venta borrada por exito");
+        alert.setHeaderText("Venta borrada con exito");
         alert.showAndWait();
         mostrarVentas();
     }
@@ -121,6 +122,7 @@ public class CancelarVentasController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuario);
     }
 
     @FXML

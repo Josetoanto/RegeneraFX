@@ -71,6 +71,7 @@ public class AgregarVentasController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuario);
     }
 
     @FXML
@@ -102,6 +103,7 @@ public class AgregarVentasController {
             VentasMenuController ventasMenuController = fxmlLoader.getController();
             ventasMenuController.setStage(stage);
             ventasMenuController.setListaCuentas(listaCuentas);
+            ventasMenuController.setUsuario(usuario);
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

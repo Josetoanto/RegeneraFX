@@ -99,6 +99,7 @@ public class MostrarVentasController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
+        ventasMenuController.setUsuario(usuario);
     }
     public void mostrarVentas(){
             ArrayList<Venta> listaVentas = listaCuentas.get(usuario).getListaVentas();

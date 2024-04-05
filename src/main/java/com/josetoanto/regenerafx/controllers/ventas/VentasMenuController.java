@@ -47,6 +47,7 @@ public class VentasMenuController {
         AgregarVentasController agregarVentasController = fxmlLoader.getController();
         agregarVentasController.setStage(stage);
         agregarVentasController.setListaCuentas(listaCuentas);
+        agregarVentasController.setUsuario(usuario);
         agregarVentasController.actualizarProductos();
     }
 
@@ -60,6 +61,7 @@ public class VentasMenuController {
         BuscarVentasController buscarVentasController = fxmlLoader.getController();
         buscarVentasController.setStage(stage);
         buscarVentasController.setListaCuentas(listaCuentas);
+        buscarVentasController.setUsuario(usuario);
     }
 
     @FXML
@@ -72,6 +74,7 @@ public class VentasMenuController {
         CancelarVentasController cancelarVentasController = fxmlLoader.getController();
         cancelarVentasController.setStage(stage);
         cancelarVentasController.setListaCuentas(listaCuentas);
+        cancelarVentasController.setUsuario(usuario);
         cancelarVentasController.mostrarVentas();
     }
 
@@ -85,6 +88,7 @@ public class VentasMenuController {
         MostrarVentasController mostrarVentasController = fxmlLoader.getController();
         mostrarVentasController.setStage(stage);
         mostrarVentasController.setListaCuentas(listaCuentas);
+        mostrarVentasController.setUsuario(usuario);
         mostrarVentasController.mostrarVentas();
     }
 
@@ -98,6 +102,7 @@ public class VentasMenuController {
         MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
         menuPrincipalController.setStage(stage);
         menuPrincipalController.setListaCuentas(listaCuentas);
+        menuPrincipalController.setUsuario(usuario);
     }
 
 }

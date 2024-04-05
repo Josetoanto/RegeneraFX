@@ -111,6 +111,7 @@ public class AgregarProductoController {
         MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
         menuPrincipalController.setStage(stage);
         menuPrincipalController.setListaCuentas(listaCuentas);
+        menuPrincipalController.setUsuario(usuario);
     }
     public void actualizarTiposDeProductos(){
         tipoDeProducto.getItems().addAll("Pastillas","Colageno");

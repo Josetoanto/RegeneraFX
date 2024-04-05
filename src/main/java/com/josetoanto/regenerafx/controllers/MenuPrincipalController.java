@@ -20,12 +20,12 @@ public class MenuPrincipalController {
 
     @FXML
     private Label usuarioLabel_menu;
-    private int usuarioIndice;
+    private int usuario;
     private Stage stage;
     private ArrayList<Cuenta> listaCuentas;
-    public void setUsuarioIndice(int cuenta) {
-        this.usuarioIndice = cuenta;
-        usuarioLabel_menu.setText(listaCuentas.get(usuarioIndice).getName());
+    public void setUsuario(int cuenta) {
+        this.usuario = cuenta;
+        usuarioLabel_menu.setText(listaCuentas.get(usuario).getName());
     }
 
     public void setStage(Stage stage) {
@@ -45,7 +45,7 @@ public class MenuPrincipalController {
         stage.show();
         InventarioMenuController inventarioMenuController = fxmlLoader.getController();
         inventarioMenuController.setListaCuentas(listaCuentas);
-        inventarioMenuController.setUsuario(usuarioIndice);
+        inventarioMenuController.setUsuario(usuario);
         inventarioMenuController.setStage(stage);
     }
 
@@ -59,7 +59,7 @@ public class MenuPrincipalController {
         ProveedoresMenuController proveedoresMenuController = fxmlLoader.getController();
         proveedoresMenuController.setStage(stage);
         proveedoresMenuController.setListaCuentas(listaCuentas);
-        proveedoresMenuController.setUsuario(usuarioIndice);
+        proveedoresMenuController.setUsuario(usuario);
     }
 
     @FXML
@@ -72,7 +72,7 @@ public class MenuPrincipalController {
         VentasMenuController ventasMenuController = fxmlLoader.getController();
         ventasMenuController.setStage(stage);
         ventasMenuController.setListaCuentas(listaCuentas);
-        ventasMenuController.setUsuario(usuarioIndice);
+        ventasMenuController.setUsuario(usuario);
     }
 
     @FXML

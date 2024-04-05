@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="604.0" prefWidth="504.0" style="-fx-background-color: #38dd75; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.AgregarVentasController">
+<AnchorPane prefHeight="604.0" prefWidth="504.0" style="-fx-background-color: #38dd75; -fx-border-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.AgregarVentasController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a49" height="41.0" stroke="BLACK" strokeType="INSIDE" width="502.0" />
       <Label layoutX="14.0" layoutY="12.0" text="AGREGAR VENTA">

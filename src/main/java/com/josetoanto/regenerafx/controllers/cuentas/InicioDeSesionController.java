@@ -41,7 +41,7 @@ public class InicioDeSesionController {
                 MenuPrincipalController menuPrincipalController = fxmlLoader.getController();
                 menuPrincipalController.setStage(stage);
                 menuPrincipalController.setListaCuentas(listaCuentas);
-                menuPrincipalController.setUsuarioIndice(cuentasIndice);
+                menuPrincipalController.setUsuario(cuentasIndice);
             } else {
                 label_Advertencia.setText("Mail o Contraseña incorrecta");
             }
