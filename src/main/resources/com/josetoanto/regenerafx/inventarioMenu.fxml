@@ -13,7 +13,7 @@
 <AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #DAFFAC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.InventarioMenuController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25914d" height="67.0" layoutY="-6.0" stroke="#088d30" strokeType="INSIDE" width="910.0" />
-      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@IMG/IMG_MenuPrincipal/IMG_logo.png" />
          </image>
@@ -31,22 +31,22 @@
             <Font name="MS Outlook" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="228.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="AGREGAR PRODUCTO" textFill="WHITE">
+      <Button layoutX="228.0" layoutY="427.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="AGREGAR PRODUCTO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="482.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#onBtnModificar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MODIFICAR PRODCUTO" textFill="WHITE">
+      <Button layoutX="482.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#onBtnModificar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MODIFICAR PRODCUTO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="227.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnEliminar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="ELIMINAR PRODUCTO" textFill="WHITE">
+      <Button layoutX="227.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#onBtnEliminar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="ELIMINAR PRODUCTO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="487.0" layoutY="526.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MOSTRAR PRODUCTOS EN STOCK" textFill="WHITE">
+      <Button layoutX="487.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MOSTRAR PRODUCTOS EN STOCK" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
