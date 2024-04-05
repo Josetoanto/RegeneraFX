@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #38dd75;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #D1B7A0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.ventas.VentasMenuController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25914d" height="46.0" layoutX="-12.0" stroke="#088d30" strokeType="INSIDE" width="922.0" />
       <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="323.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
@@ -18,7 +18,7 @@
             <Image url="@IMG/IMG_MenuPrincipal/IMG_logo.png" />
          </image>
          <effect>
-            <ColorAdjust brightness="0.12" contrast="0.21" hue="-0.56" />
+            <ColorAdjust brightness="0.23" contrast="0.3" hue="-0.42" />
          </effect>
       </ImageView>
       <Label fx:id="usuarioLabel_menu" layoutX="62.0" layoutY="4.0" prefHeight="40.0" prefWidth="443.0" textAlignment="RIGHT" textOverrun="CLIP">
@@ -31,22 +31,22 @@
             <Font name="MS Outlook" size="16.0" />
          </font>
       </Label>
-      <Button layoutX="168.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregarVenta_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="AGREGAR VENTA" textFill="WHITE">
+      <Button layoutX="168.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#onBtnAgregarVenta_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #C1FF72; -fx-background-radius: 25;" text="AGREGAR VENTA">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="382.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onBtnBuscar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="BUSCAR VENTA" textFill="WHITE">
+      <Button layoutX="382.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onBtnBuscar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #C1FF72; -fx-background-radius: 25;" text="BUSCAR VENTA">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="588.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onBtnCancelar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="CANCELAR VENTA" textFill="WHITE">
+      <Button layoutX="588.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onBtnCancelar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #C1FF72; -fx-background-radius: 25;" text="CANCELAR VENTA">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="383.0" layoutY="493.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2eb761; -fx-background-radius: 25;" text="MOSTRAR VENTAS" textFill="WHITE">
+      <Button layoutX="383.0" layoutY="493.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuVenta" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #C1FF72; -fx-background-radius: 25;" text="MOSTRAR VENTAS">
          <effect>
             <DropShadow />
          </effect>
