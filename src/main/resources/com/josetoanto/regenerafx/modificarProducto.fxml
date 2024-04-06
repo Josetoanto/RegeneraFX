@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="555.0" prefWidth="500.0" style="-fx-background-color: #60aa64;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController">
+<AnchorPane prefHeight="555.0" prefWidth="500.0" style="-fx-background-color: #29672D;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.inventario.ModificarProductoController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a499c" height="363.0" layoutX="68.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="365.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#238a49" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#518d2a9c" height="363.0" layoutX="68.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 50;" width="365.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#64b783" height="41.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
       <Label layoutX="14.0" layoutY="12.0" text="MODIFICAR PRODUCTO">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="12.0" />
@@ -19,7 +21,7 @@
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoCancelar.png" />
          </image>
       </ImageView>
-      <Label layoutX="98.0" layoutY="54.0" prefHeight="45.0" prefWidth="313.0" text="CODIGO DEL PRODUCTO A MODIFICAR:">
+      <Label layoutX="98.0" layoutY="54.0" prefHeight="45.0" prefWidth="313.0" text="CODIGO DEL PRODUCTO A MODIFICAR:" textFill="WHITE">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
@@ -30,25 +32,25 @@
             <Image url="@IMG/IMG_MenuVenta/IMG_iconoListo.png" />
          </image>
       </ImageView>
-      <Label layoutX="105.0" layoutY="162.0" prefHeight="45.0" prefWidth="250.0" text="CANTIDAD DE PRODUCTO:">
+      <Label layoutX="105.0" layoutY="160.0" prefHeight="45.0" prefWidth="250.0" text="CANTIDAD DE PRODUCTO:" textFill="WHITE">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
       <TextField fx:id="cantidadProducto" layoutX="105.0" layoutY="195.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="243.0" prefHeight="45.0" prefWidth="250.0" text="CODIGO DE PRODUCTO:">
+      <Label layoutX="105.0" layoutY="241.0" prefHeight="45.0" prefWidth="250.0" text="CODIGO DE PRODUCTO:" textFill="WHITE">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
       <TextField fx:id="codigoProducto" layoutX="105.0" layoutY="276.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="318.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DE PRODUCTO:">
+      <Label layoutX="105.0" layoutY="316.0" prefHeight="45.0" prefWidth="250.0" text="NOMBRE DE PRODUCTO:" textFill="WHITE">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
       </Label>
       <TextField fx:id="nombreProducto" layoutX="105.0" layoutY="351.0" prefHeight="34.0" prefWidth="300.0" style="-fx-background-radius: 2;" />
-      <Label layoutX="105.0" layoutY="400.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DE PRODUCTO:">
+      <Label layoutX="105.0" layoutY="398.0" prefHeight="45.0" prefWidth="250.0" text="PRECIO DE PRODUCTO:" textFill="WHITE">
          <font>
             <Font name="MS Reference Sans Serif" size="15.0" />
          </font>
