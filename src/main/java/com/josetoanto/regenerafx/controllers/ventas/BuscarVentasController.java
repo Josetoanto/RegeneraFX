@@ -52,6 +52,7 @@ public class BuscarVentasController {
                 cantidadCliente_buscarVenta.setText(String.valueOf(venta.getCantidadDeProducto()));
                 numeroCliente_BuscarVenta.setText(venta.getClientNum());
                 total_buscarV1.setText(String.valueOf(venta.getTotal()));
+                return;
             } else {
                 nameCliente_BuscarVenta.setText("");
                 cantidadCliente_buscarVenta.setText("");

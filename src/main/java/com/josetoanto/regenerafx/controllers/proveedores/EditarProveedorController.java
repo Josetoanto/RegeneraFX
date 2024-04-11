@@ -54,6 +54,7 @@ public class EditarProveedorController {
                 newNumeroTelefono_editarProveedor.setText(proveedor.getNumProveedor());
                 newProveedor_editarProveedor.setText(proveedor.getNameProveedor());
                 numeroProveedor_editarProveedor.setText(proveedor.getIDProveedor());
+                return;
             } else {
                 lbl_Advertencia.setText("Proveedor no encontrado");
                 newNumeroTelefono_editarProveedor.setText("");
@@ -65,13 +66,19 @@ public class EditarProveedorController {
 
     @FXML
     void onConfirmarClick(MouseEvent event) {
+        int auxEditar = -1;
+        int aux = 0;
         for (Proveedor proveedor: listaCuentas.get(usuario).getListaProveedores()) {
             if (proveedor.getIDProveedor().equals(idEditar.getText())) {
-                proveedor.setNameProveedor(newProveedor_editarProveedor.getText());
-                proveedor.setNumProveedor(numeroProveedor_editarProveedor.getText());
-                proveedor.setIDProveedor(numeroProveedor_editarProveedor.getText());
-                lbl_Advertencia.setText("Proveedor editado con exito");
+                auxEditar = aux;
             }
+            aux++;
+        }
+        if (aux != -1){
+            listaCuentas.get(usuario).getListaProveedores().get(auxEditar).setNameProveedor(newProveedor_editarProveedor.getText());
+            listaCuentas.get(usuario).getListaProveedores().get(auxEditar).setNumProveedor(newNumeroTelefono_editarProveedor.getText());
+            listaCuentas.get(usuario).getListaProveedores().get(auxEditar).setIDProveedor(numeroProveedor_editarProveedor.getText());
+            lbl_Advertencia.setText("Proveedor editado con exito");
         }
     }
 

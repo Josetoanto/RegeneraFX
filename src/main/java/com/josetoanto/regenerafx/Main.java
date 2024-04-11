@@ -22,7 +22,7 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
         InicioDeSesionController inicioDeSesionController = fxmlLoader.getController();
-        inicioDeSesionController.setListaCuentas(regenera.getListaDeUsuarios());
+        inicioDeSesionController.setListaCuentas(regenera.obtenerListaDeUsuarios());
         inicioDeSesionController.setStage(stage);
     }
 

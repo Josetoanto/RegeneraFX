@@ -95,7 +95,7 @@ public class CancelarVentasController {
     @FXML
     void btmEliminarVenta1(MouseEvent event) {
         listaCuentas.get(usuario).getListaVentas().remove(aux);
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Borrada");
         alert.setHeaderText("Venta borrada con exito");
         alert.showAndWait();

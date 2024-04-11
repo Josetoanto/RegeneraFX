@@ -62,6 +62,10 @@ public class AgregarProveedorController {
         proveedoresMenuController.setListaCuentas(listaCuentas);
         proveedoresMenuController.setUsuario(usuario);
         proveedoresMenuController.setStage(stage);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Confirmacion");
+        alert.setHeaderText("Accion realizada con exito");
+        alert.showAndWait();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("ID ya existente, intente denuevo");

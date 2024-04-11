@@ -40,9 +40,6 @@ public class Venta {
         this.cantidadDeProducto = cantidadDeProducto;
     }
 
-    public String getCodigoProductoID() {
-        return codigoProductoID;
-    }
 
     public void setCodigoProductoID(String codigoProductoID) {
         this.codigoProductoID = codigoProductoID;

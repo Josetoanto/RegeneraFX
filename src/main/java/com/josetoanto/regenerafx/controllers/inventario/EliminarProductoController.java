@@ -59,6 +59,7 @@ public class EliminarProductoController {
                     nameP_eliminarProducto.setText(producto.getName());
                     precio_eliminarProducto.setText(String.valueOf(producto.getPriece()));
                     advertencia.setText("Producto encontrado");
+                    return;
                 } else {
                     advertencia.setText("Producto no encontrado");
                     codigo_eliminarProducto.setText("");

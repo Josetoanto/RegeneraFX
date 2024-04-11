@@ -104,6 +104,10 @@ public class AgregarVentasController {
             ventasMenuController.setStage(stage);
             ventasMenuController.setListaCuentas(listaCuentas);
             ventasMenuController.setUsuario(usuario);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Confirmacion");
+            alert.setHeaderText("Accion realizada con exito");
+            alert.showAndWait();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

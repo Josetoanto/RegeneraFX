@@ -60,6 +60,7 @@ public class ModificarProductoController {
                 nombreProducto.setText(producto.getName());
                 codigoProducto.setText(producto.getCodigoProductoID());
                 precioProducto.setText(String.valueOf(producto.getPriece()));
+                return;
             } else {
                 lblAdvertencia.setText("Producto no encontrado");
                 cantidadProducto.setText("");

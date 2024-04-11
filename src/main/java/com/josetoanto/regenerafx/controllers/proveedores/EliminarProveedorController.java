@@ -51,6 +51,7 @@ public class EliminarProveedorController {
                 lbl_Advertencia.setText("Proveedor encontrado");
                 nameP_eliminarProveedor.setText(proveedor.getNameProveedor());
                 telefono_eliminarProveedor.setText(proveedor.getNumProveedor());
+                return;
             } else {
                 lbl_Advertencia.setText("Proveedor no encontrado");
                 nameP_eliminarProveedor.setText("");

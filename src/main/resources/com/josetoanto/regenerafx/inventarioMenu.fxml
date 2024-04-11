@@ -35,21 +35,33 @@
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
       <Button layoutX="492.0" layoutY="425.0" mnemonicParsing="false" onMouseClicked="#onBtnModificar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MODIFICAR PRODCUTO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
       <Button layoutX="217.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#onBtnEliminar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="ELIMINAR PRODUCTO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
       <Button layoutX="497.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#onBtnMostrar_menuInventario" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #25914d; -fx-background-radius: 25;" text="MOSTRAR PRODUCTOS EN STOCK" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
       </Button>
       <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="853.0" layoutY="14.0" onMouseClicked="#onSalirClick" pickOnBounds="true" preserveRatio="true">
          <image>

@@ -47,23 +47,34 @@ public class CreacionDeCuentaController {
 
     @FXML
     void onBtnIngresar_newCuenta(MouseEvent event) throws IOException {
-        if (newPassword_newCuenta.getText().equals(repeatPassword_newCuenta.getText())){
-            Cuenta cuenta = new Cuenta();
-            cuenta.setName(createUsername_newCuenta.getText());
-            cuenta.setGmail(newEmail_newCuenta.getText());
-            cuenta.setPassword(newPassword_newCuenta.getText());
-            listaCuentas.add(cuenta);
-            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inicioDeSesion.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("Regenera");
-            stage.setScene(scene);
-            stage.show();
-            InicioDeSesionController inicioDeSesionController = fxmlLoader.getController();
-            inicioDeSesionController.setListaCuentas(listaCuentas);
-            inicioDeSesionController.setStage(stage);
-        } else {
-            labelError.setText("Contraseña no iguales");
+        boolean noExistente = true;
+        for (Cuenta cuenta : listaCuentas) {
+            if (cuenta.getGmail().equals(newEmail_newCuenta.getText())) {
+                noExistente = false;
+            }
         }
+        if (noExistente) {
+            if (newPassword_newCuenta.getText().equals(repeatPassword_newCuenta.getText())) {
+                Cuenta cuenta = new Cuenta();
+                cuenta.setName(createUsername_newCuenta.getText());
+                cuenta.setGmail(newEmail_newCuenta.getText());
+                cuenta.setPassword(newPassword_newCuenta.getText());
+                listaCuentas.add(cuenta);
+                FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("inicioDeSesion.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+                stage.setTitle("Regenera");
+                stage.setScene(scene);
+                stage.show();
+                InicioDeSesionController inicioDeSesionController = fxmlLoader.getController();
+                inicioDeSesionController.setListaCuentas(listaCuentas);
+                inicioDeSesionController.setStage(stage);
+            } else {
+                labelError.setText("Contraseña no iguales");
+            }
+        } else {
+            labelError.setText("Cuenta ya registrada");
+        }
+
     }
 
     public void setListaCuentas(ArrayList<Cuenta> listaCuentas) {

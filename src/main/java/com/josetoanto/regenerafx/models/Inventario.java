@@ -10,10 +10,6 @@ public class Inventario {
         return productList;
     }
 
-    public void setProductList(ArrayList<Producto> productList) {
-        this.productList = productList;
-    }
-
     public void agregarProducto(Producto nuevoProducto){
         productList.add(nuevoProducto);
     }

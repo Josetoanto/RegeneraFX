@@ -4,11 +4,18 @@ public class Pastillas extends Producto{
 
     private int cantidadPastillas;
 
-    public int getCantidadPastillas() {
-        return cantidadPastillas;
-    }
-
     public void setCantidadPastillas(int cantidadPastillas) {
         this.cantidadPastillas = cantidadPastillas;
+    }
+
+    @Override
+    public String toString() {
+        return "Pastillas{" +
+                "cantidadPastillas=" + cantidadPastillas +
+                ", name='" + name + '\'' +
+                ", priece=" + priece +
+                ", quantity=" + quantity +
+                ", codigoProductoID='" + codigoProductoID + '\'' +
+                '}';
     }
 }

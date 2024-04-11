@@ -54,9 +54,6 @@ public class Cuenta {
         return listaVentas;
     }
 
-    public void setListaVentas(Venta newVenta) {
-        this.listaVentas.add(newVenta);
-    }
 
     @Override
     public String toString() {

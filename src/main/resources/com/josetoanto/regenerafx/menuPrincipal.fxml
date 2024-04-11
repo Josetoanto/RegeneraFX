@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #00be62;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.MenuPrincipalController">
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #AADBA2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.josetoanto.regenerafx.controllers.MenuPrincipalController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#009537" height="46.0" layoutX="-5.0" stroke="#088d30" strokeType="INSIDE" width="907.0" />
       <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="301.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
@@ -23,7 +23,7 @@
             <Font name="Amble Regular" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="179.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#onBtnVenta_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="VENTAS">
+      <Button layoutX="179.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#onBtnVenta_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="VENTAS" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -31,7 +31,7 @@
             <Font name="Berlin Sans FB" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="543.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#onBtnInventario_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="INVENTARIO">
+      <Button layoutX="543.0" layoutY="430.0" mnemonicParsing="false" onMouseClicked="#onBtnInventario_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="INVENTARIO" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
@@ -39,7 +39,7 @@
             <Font name="Berlin Sans FB" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="359.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#onBtnProveedores_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="PROVEEDORES">
+      <Button layoutX="359.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#onBtnProveedores_menu" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #007139; -fx-background-radius: 25;" text="PROVEEDORES" textFill="WHITE">
          <effect>
             <DropShadow />
          </effect>
