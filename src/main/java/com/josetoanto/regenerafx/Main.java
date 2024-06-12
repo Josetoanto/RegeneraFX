@@ -10,8 +10,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-//hola
-
 public class Main extends Application {
     Regenera regenera = new Regenera();
     @Override

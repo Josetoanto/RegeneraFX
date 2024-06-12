@@ -4,6 +4,7 @@ module com.josetoanto.regenerafx {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
 
     opens com.josetoanto.regenerafx to javafx.fxml;
     exports com.josetoanto.regenerafx;
