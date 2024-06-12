@@ -30,6 +30,44 @@ public class Inventario {
     Statement statement;
     ResultSet resultSet;
 
+    public void addProducto(String name, double price, int quantity) {
+        String sql = "INSERT INTO Producto (name, price, quantity) VALUES (?, ?, ?)";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, name);
+            pstmt.setDouble(2, price);
+            pstmt.setInt(3, quantity);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateProducto(int id, String name, double price, int quantity) {
+        String sql = "UPDATE Producto SET name = ?, price = ?, quantity = ? WHERE codigoProductoID = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, name);
+            pstmt.setDouble(2, price);
+            pstmt.setInt(3, quantity);
+            pstmt.setInt(4, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void deleteProducto(int id) {
+        String sql = "DELETE FROM Producto WHERE codigoProductoID = ?";
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     {
         try {
             connection = DriverManager.getConnection(url,username,password);
